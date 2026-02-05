@@ -31,6 +31,7 @@ app.get('/healthcheck', (req, res) => {
   res.status(200).json({
   status: 'success',
   message: 'OK'
+  })
 })
 
 app.use('/api/credit-package', creditPackageRouter)
